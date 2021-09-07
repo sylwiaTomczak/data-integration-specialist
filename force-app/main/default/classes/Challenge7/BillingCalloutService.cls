@@ -16,7 +16,7 @@ public class BillingCalloutService {
         project.password = serviceCredentials.Password__c;
         project.billAmount = amount;
 
-        //odowłanie się do wygenerowaniej klasy z WSLD pliku i jej metody
+        //odowłanie się do wygenerowaniej klasy z WSLD pliku i jej metody generującej fakture
         //przypisanie do zmiennej response wartosci z metody billPRoject
         // z dodaniem parametru z wartosciami przypisanymi wyzej do project
         BillingServiceProxy.InvoicesPortSoap11 portSoap = new BillingServiceProxy.InvoicesPortSoap11();
